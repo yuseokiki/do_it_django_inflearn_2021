@@ -41,6 +41,9 @@
                 <header class="mb-4">
                     <!-- Post title-->
                     <h1 class="fw-bolder mb-1">{{ post.title }}</h1>
+                    {% if post.hook_text %}
+                         <h5 class="text-muted">{{ post.hook_text }}</h5>
+                    {% endif %}
                     <p class = "lead">
                         by
                         <a href="#">작성자명 쓸 위치</a>
