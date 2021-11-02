@@ -4,7 +4,12 @@
 <h1>
     Blog
     {% if category %}
-        <span class="badge badge-secondary float-right">{{ category }}</span>
+        <span class="badge badge-secondary">{{ category }}</span>
+    {% endif %}
+    {% if tag %}
+        <span class="badge badge-secondary">
+            <i class="fas fa-tag"></i> {{ tag }}
+        </span>
     {% endif %}
 </h1>
 
