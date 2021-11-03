@@ -3,7 +3,7 @@
 {% block main_area %}
     {% if user.is_authenticated %}
         {% if user.is_superuser or user.is_staff %}
-        <a type="button" href="/blog/create_post" class="btn-sm btn-info float-right"><i class="fas fa-pencil-alt"></i>&nbsp; &nbsp; New Post</a>
+        <a type="button" href="/blog/create_post/" class="btn-sm btn-info float-right"><i class="fas fa-pencil-alt"></i>&nbsp; &nbsp; New Post</a>
         {% endif %}
     {% endif %}
 <h1>
