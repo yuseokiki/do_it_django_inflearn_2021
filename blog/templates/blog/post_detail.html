@@ -41,8 +41,9 @@
         {% else %}
         <a href="#!"><img class="card-img-top" src= https://picsum.photos/seed/{{post.id}}/600/200 alt="{{ post.title}}" /></a>
         {% endif %}
+
         <!-- Post content-->
-        <p>{{ post.content }}</p>
+        <p>{{ post.get_content_markdown | safe }}</p>
         {% if post.file_upload %}
         <a href = "{{ post.file_upload.url }}" type="button" class="btn btn-outline-dark" role="button" download>
             Download:
