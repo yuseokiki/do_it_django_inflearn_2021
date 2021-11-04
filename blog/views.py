@@ -95,7 +95,7 @@ class PostUpdate(LoginRequiredMixin, UpdateView):
                 self.object.tags.add(tag)
         return response
 
-    
+
 def category_page(request, slug):
     if slug == 'no_category':
         category = '미분류'
